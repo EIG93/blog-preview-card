@@ -18,8 +18,13 @@
     box-sizing: border-box;
 }
 
+:root {
+    --fs-200: clamp(0.75rem, 1vw, 0.875rem);
+    --fs-300: clamp(0.875rem, 1.2vw, 1rem);
+}
+
 body {
-    font-size: 16px;
+    font-size: var(--fs-300);
     display: flex;
     height: 100vh;
     align-items: center;
@@ -58,6 +63,7 @@ h3 {
 }
 
 .published-date {
+    font-size: var(--fs-200);
     color: #111111;
     margin: 12px 0px;
     font-size: 0.65rem;
@@ -65,11 +71,12 @@ h3 {
 
 .comment {
     color: #6B6B6B;
-    font-size: 0.7rem;
+    font-size: var(--fs-300);
 }
 
 .learning {
     font-family: 'Figtree-ExtraBold';
+    font-size: var(--fs-200);
     display: inline-block;
     margin-top: 24px;
     border-radius: 4px;
@@ -86,11 +93,11 @@ h3 {
 }
 
 .author-avatar {
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
 }
 
 .author-name {
     font-family: 'Figtree-ExtraBold';
-    font-size: 0.7rem;
+    font-size: var(--fs-200);
 }
