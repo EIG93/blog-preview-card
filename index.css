@@ -101,3 +101,7 @@ h1 {
     font-family: 'Figtree-ExtraBold';
     font-size: var(--fs-200);
 }
+
+h1:hover, h1:focus {
+    color: hsl(47 88 63);
+}
